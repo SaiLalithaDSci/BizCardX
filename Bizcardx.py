@@ -196,7 +196,7 @@ with tab1:
             conn = psycopg2.connect(
                 host="localhost",
                 user="postgres",
-                password="sailalitha",
+                password="password",
                 dbname="bizcard_db",
                 port="5432")
 
@@ -204,11 +204,11 @@ with tab1:
             cur = conn.cursor()
 
             # Connect to the newly created database
-            engine = create_engine('postgresql+psycopg2://postgres:sailalitha@localhost/bizcard_db', echo=False)
+            engine = create_engine('postgresql+psycopg2://postgres:password@localhost/bizcard_db', echo=False)
             conn = psycopg2.connect(
                 host="localhost",
                 user="postgres",
-                password="sailalitha",
+                password="password",
                 dbname="bizcard_db",
                 port="5432")
             cur = conn.cursor()
@@ -254,7 +254,7 @@ with tab2:
         conn = psycopg2.connect(
                 host="localhost",
                 user="postgres",
-                password="sailalitha",
+                password="password",
                 dbname="bizcard_db",
                 port="5432")
 
@@ -315,7 +315,7 @@ with tab2:
         conn = psycopg2.connect(
                 host="localhost",
                 user="postgres",
-                password="sailalitha",
+                password="password",
                 dbname="bizcard_db",
                 port="5432")
         
@@ -362,7 +362,7 @@ with tab3:
     conn = psycopg2.connect(
             host="localhost",
             user="postgres",
-            password="sailalitha",
+            password="password",
             dbname="bizcard_db",
             port="5432")
 
